@@ -22,7 +22,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnC-fG-Aq6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnC-fG-Aq6">
                                 <rect key="frame" x="231" y="203" width="163" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="163" id="vTx-oa-N6L"/>
@@ -68,6 +68,9 @@
                                     <segment title="18%"/>
                                     <segment title="20%"/>
                                 </segments>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="8Hy-wc-LWh"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i9d-tW-7pZ">
                                 <rect key="frame" x="231" y="353" width="163" height="21"/>
@@ -108,6 +111,7 @@
                     <navigationItem key="navigationItem" title="Tip Calculator" id="ral-ai-grT"/>
                     <connections>
                         <outlet property="billField" destination="gNw-LU-9t1" id="INa-3b-pXe"/>
+                        <outlet property="tipControl" destination="ZfK-pB-kF9" id="lYR-gI-QbG"/>
                         <outlet property="tipLabel" destination="KnC-fG-Aq6" id="Ov7-70-39r"/>
                         <outlet property="totalLabel" destination="i9d-tW-7pZ" id="cQJ-Vg-bFr"/>
                     </connections>
