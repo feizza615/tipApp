@@ -105,7 +105,11 @@
                     <navigationItem key="navigationItem" title="Tip Calculator" id="ral-ai-grT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="mKm-lw-wIJ"/>
+                <tapGestureRecognizer id="mKm-lw-wIJ">
+                    <connections>
+                        <action selector="onTap:" destination="BYZ-38-t0r" id="4Fe-OC-V7o"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="71.651785714285708"/>
         </scene>
