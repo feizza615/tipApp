@@ -57,6 +57,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="NCo-4h-v06"/>
+                                </connections>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZfK-pB-kF9">
                                 <rect key="frame" x="20" y="288" width="374" height="32"/>
@@ -103,6 +106,11 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Tip Calculator" id="ral-ai-grT"/>
+                    <connections>
+                        <outlet property="billField" destination="gNw-LU-9t1" id="INa-3b-pXe"/>
+                        <outlet property="tipLabel" destination="KnC-fG-Aq6" id="Ov7-70-39r"/>
+                        <outlet property="totalLabel" destination="i9d-tW-7pZ" id="cQJ-Vg-bFr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="mKm-lw-wIJ">
